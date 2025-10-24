@@ -8,6 +8,42 @@ export const metadata: Metadata = {
   description: "Your personalised AI assistant that connects to your business systems—answering questions, solving problems, and helping your team succeed in real-time.",
   keywords: "AI assistant, restaurant technology, retail automation, POS integration, staff training, business intelligence, business assistant",
   authors: [{ name: "Taskorly Team" }],
+  creator: "Taskorly",
+  publisher: "Taskorly",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://taskorly.com',
+    siteName: 'Taskorly',
+    title: 'Taskorly - AI Assistant for Restaurants & Retail',
+    description: 'Your personalised AI assistant that connects to your business systems—answering questions, solving problems, and helping your team succeed in real-time.',
+    images: [
+      {
+        url: '/android-chrome-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Taskorly Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Taskorly - AI Assistant for Restaurants & Retail',
+    description: 'Your personalised AI assistant that connects to your business systems—answering questions, solving problems, and helping your team succeed in real-time.',
+    images: ['/android-chrome-512x512.png'],
+    creator: '@taskorly',
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -23,6 +59,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  verification: {
+    google: 'your-google-verification-code', // Replace with actual verification code
+  },
 };
 
 export const viewport = {
