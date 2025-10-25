@@ -69,10 +69,11 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <h2 className="section-title">Ready to Transform Your Team?</h2>
-      <p className="section-subtitle">Schedule a demo and see Taskorly in action</p>
-      <div className="contact-container">
-        <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="contact-outer-container">
+        <h2 className="contact-title">Ready to Transform Your Team?</h2>
+        <p className="contact-subtitle">Schedule a demo and see Taskorly in action</p>
+        <div className="contact-inner-container">
+          <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
             <input 
@@ -146,7 +147,8 @@ export default function Contact() {
               ❌ {errorMessage}
             </div>
           )}
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   )
