@@ -530,8 +530,8 @@ nav {
   height: 41px;
   border: 0.6px solid rgba(255, 255, 255, 1.00);
   border-radius: 15px;
-  background: transparent;
-  color: white;
+  background-color: #F0F5FF;
+  color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   padding: 0 1rem;
@@ -558,6 +558,7 @@ nav {
   height: 120px;
   resize: vertical;
   padding: 1rem;
+  background-color: #F0F5FF;
 }
 
 .form-group input::placeholder,
