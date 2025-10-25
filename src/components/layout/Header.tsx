@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Header() {
@@ -9,7 +10,15 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <div className="logo-text">TASKORLY</div>
+        <div className="logo-container">
+          <Image 
+            src="/Logo_Lined_Reverse.png" 
+            alt="TASKORLY Logo" 
+            width={150} 
+            height={150}
+            className="logo-icon"
+          />
+        </div>
         <button 
           className="mobile-menu-btn"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
