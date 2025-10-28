@@ -59,9 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
-  },
+  // DNS verification is handled via CNAME record in DNS provider
 };
 
 export const viewport = {
