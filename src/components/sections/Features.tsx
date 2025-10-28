@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 const features = [
   {
-    title: 'POS Integration',
-    description: 'Seamlessly integrates with Square, Shopify, and major POS systems. Your team gets help exactly when they need it, right in their workflow.',
+    title: 'System Connectivity',
+    description: 'Connects to your POS, inventory, email, calendar, and business tools. Taskorly pulls live data from across your operations to deliver intelligent, real-time answers when your team needs them',
     icon: '/POS icon.png'
   },
   {
