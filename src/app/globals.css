@@ -259,6 +259,43 @@ nav {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .feature-icon {
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card h3 {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .feature-card p {
+    text-align: center;
+  }
 }
 
 .feature-card {
@@ -408,6 +445,10 @@ nav {
 @media (max-width: 768px) {
   .stat-number {
     font-size: 2.5rem;
+  }
+
+  .stat-box{
+    text-align: center;
   }
 }
 
