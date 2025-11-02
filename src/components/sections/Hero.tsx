@@ -8,18 +8,18 @@ export default function Hero() {
         <div className="hero-text">
           <h1>Your <span className="highlight">AI-Powered</span> Business Assistant</h1>
           <p>Taskorly is your personalised AI business assistant that connects to your business systems. Answering questions, solving problems, and helping your team succeed in real-time.</p>
-          <Link href="#contact" className="hero-cta">Schedule a Demo</Link>
         </div>
         <div className="hero-visual">
-          <Image 
-            src="/Landing Screen Chat Graphic.png" 
-            alt="Taskorly Chat Interface" 
-            width={800} 
+          <Image
+            src="/Landing Screen Chat Graphic.png"
+            alt="Taskorly Chat Interface"
+            width={800}
             height={600}
             className="chat-graphic"
             priority
           />
         </div>
+        <Link href="#contact" className="hero-cta">Schedule a Demo</Link>
       </div>
     </section>
   )

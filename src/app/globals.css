@@ -117,7 +117,8 @@ nav {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-rows: auto auto;
+  gap: 0 4rem;
   align-items: flex-start;
   position: relative;
   z-index: 1;
@@ -127,6 +128,23 @@ nav {
 .hero-text {
   margin-top: 6rem;
   padding-top: 8rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.hero-visual {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.hero-cta {
+  grid-column: 1;
+  grid-row: 2;
+  width: fit-content;
 }
 
 .hero-text h1 {
@@ -137,6 +155,7 @@ nav {
   margin-bottom: 1.5rem;
   color: white;
   max-width: 634px;
+  
 }
 
 .hero-text .highlight {
@@ -178,13 +197,6 @@ nav {
 }
 
 /* Chat Interface */
-.hero-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
 .chat-graphic {
   width: 120%;
   max-width: 800px;
@@ -258,6 +270,43 @@ nav {
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .feature-icon {
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card h3 {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .feature-card p {
+    text-align: center;
   }
 }
 
@@ -408,6 +457,10 @@ nav {
 @media (max-width: 768px) {
   .stat-number {
     font-size: 2.5rem;
+  }
+
+  .stat-box{
+    text-align: center;
   }
 }
 
@@ -747,12 +800,29 @@ footer {
 
   .hero-content {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     gap: 2rem;
   }
 
   .hero-text {
-    margin-top: 3rem;
-    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-top: 4rem;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .hero-visual {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .hero-cta {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    text-align: center;
+    width: fit-content;
   }
 
   .hero-text h1 {
